@@ -1,0 +1,47 @@
+{
+  "name": "demeterium",
+  "version": "0.0.1",
+  "description": "demeterium is the API that powers Biteport.",
+  "main": "index.js",
+  "repository": "",
+  "author": "Saif Ali <saifincreation@gmail.com>",
+  "license": "All Rights Reserved",
+  "private": true,
+  "scripts": {
+    "dev": "node index.js",
+    "start": "node index.js",
+    "update:packages": "node wipe-dependencies.js && rm -rf node_modules && npm update --save-dev && npm update --save",
+    "test": "jest --watchAll",
+    "lint": "eslint .",
+    "format": "prettier --write '*/**/*.js'"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "bcrypt": "^3.0.6",
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.4",
+    "cors": "^2.8.5",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "helmet": "^3.18.0",
+    "jsonwebtoken": "^8.5.1",
+    "jwt-decode": "^2.2.0",
+    "lodash": "^4.17.15",
+    "mongoose": "^5.6.6",
+    "morgan": "^1.9.1",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "serve-favicon": "^2.5.0",
+    "validator": "^11.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-prettier": "^3.1.0",
+    "jest": "^24.8.0",
+    "prettier": "1.18.2",
+    "supertest": "^4.0.2"
+  }
+}
