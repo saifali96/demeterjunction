@@ -5,15 +5,15 @@ const resultService = require("../../services/analysis/result");
 
 const router = express.Router();
 
-router.post(
-  "/",
-  passport.authenticate("jwt", { session: false }),
-  analysisService.postAnalysis
-);
-router.get(
-  "/:uid",
-  passport.authenticate("jwt", { session: false }),
-  resultService.getAnalysis
-);
+// router.post(
+//   "/",
+//   passport.authenticate("jwt", { session: false }),
+//   analysisService.postAnalysis
+// );
+// router.get(
+//   "/:uid",
+//   passport.authenticate("jwt", { session: false }),
+//   resultService.getAnalysis
+// );
 
 module.exports = router;
